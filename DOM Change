@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change DOM Element</title>
+</head>
+<body>
+    <p id="myElement">This text will change every 2 seconds</p>
+    <script>
+        const texts = [
+            "Text 1: Hello, World!", 
+            "Text 2: How are you today?", 
+            "Text 3: JavaScript is fun!", 
+            "Text 4: Keep learning and coding!", 
+            "Text 5: Have a great day!"
+        ];
+        let index = 0;
+
+        function changeText() {
+            const element = document.getElementById("myElement");
+            element.textContent = texts[index];
+            index = (index + 1) % texts.length;
+        }
+
+        // Call changeText every 2 seconds
+        setInterval(changeText, 2000);
+    </script>
+</body>
+</html>
