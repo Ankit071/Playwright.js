@@ -1,2 +1,2 @@
 # Wipro.js
-New Registration Page
+JavaScript Learning
