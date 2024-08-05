@@ -44,7 +44,6 @@
 
 <script>
     function register() {
-        // Get form values
         var name = document.getElementById('name').value;
         var dob = document.getElementById('dob').value;
         var place = document.getElementById('place').value;
@@ -60,7 +59,7 @@
             password: password
         };
 
-        // Convert JSON object to string and display it (you can also send it to a server)
+        // Convert JSON object to string and display it
         alert(JSON.stringify(user));
     }
 </script>
