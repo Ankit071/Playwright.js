@@ -1,2 +1,2 @@
-# Wipro.js
+# Playwright.js
 JavaScript Learning
